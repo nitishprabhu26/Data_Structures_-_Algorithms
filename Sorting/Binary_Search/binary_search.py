@@ -9,11 +9,11 @@
 
 
 
-# from ..Binary_Search.util import time_it
+from ..util import time_it
 
 # Linear Search:
 # The time complexity of the above algorithm is O(n).
-# @time_it
+@time_it
 def linear_search(numbers_list, number_to_find):
     for index, element in enumerate(numbers_list):
         if element == number_to_find:
@@ -21,7 +21,7 @@ def linear_search(numbers_list, number_to_find):
     return -1
 
 
-# @time_it
+@time_it
 def binary_search(arr, x):
     low = 0
     high = len(arr) - 1
@@ -44,7 +44,7 @@ def binary_search(arr, x):
     return -1
 
 # recursion
-# @time_it
+@time_it
 def binary_search_recursive(arr, x, low, high):
     # Check base case
     if high >= low:
