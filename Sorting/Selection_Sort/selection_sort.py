@@ -21,7 +21,7 @@ def selectionSort(arr):
 
 
 # Driver code to test above
-arr = [64, 25, 12, 22, 11]
+# arr = [64, 25, 12, 22, 11]
 arr = [78, 12, 15, 8, 61, 53, 23, 27]
 
 selectionSort(arr)
