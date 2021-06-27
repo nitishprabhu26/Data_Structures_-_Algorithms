@@ -1,4 +1,5 @@
-# The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+# The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the 
+# correct position in the sorted part.
 
 # Function to do insertion sort
 def insertionSort(arr):
@@ -14,13 +15,12 @@ def insertionSort(arr):
         arr[j+1] = key
 
 
-
 # Driver code to test above
 arr = [12, 11, 13, 5, 6]
 insertionSort(arr)
 print(arr)
 
-# Time Complexity: O(n^2) 
+# Time Complexity: O(n^2)
 # Auxiliary Space: O(1)
 # Boundary Cases: Insertion sort takes maximum time to sort if elements are sorted in reverse order. And it takes minimum time (Order of n) when elements are already sorted.
 # Algorithmic Paradigm: Incremental Approach

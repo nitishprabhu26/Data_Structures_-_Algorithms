@@ -1,7 +1,7 @@
 # Bubble Sort:
 # It is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
 
-# Python program for implementation of Bubble Sort
+
 def bubbleSort(arr):
     n = len(arr)
 
