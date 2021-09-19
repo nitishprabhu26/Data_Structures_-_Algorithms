@@ -1,7 +1,10 @@
 # Binary Search:
-# this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after just 
-# one comparison.
-# Binary Search: Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
+# https://www.geeksforgeeks.org/binary-search/
+# this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after 
+# just one comparison.
+# Binary Search: Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the 
+# whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the 
+# lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
 
 # Compare x with the middle element.
 # If x matches with the middle element, we return the mid index.
@@ -9,10 +12,10 @@
 # Then we apply the algorithm again for the right half.
 # Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half.
 
-from util import time_it
-
 # Linear Search:
 # The time complexity of the above algorithm is O(n).
+
+from util import time_it
 
 
 @time_it

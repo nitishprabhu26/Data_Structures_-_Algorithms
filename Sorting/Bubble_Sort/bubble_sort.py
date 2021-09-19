@@ -1,5 +1,6 @@
 # Bubble Sort:
 # It is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+# https://www.geeksforgeeks.org/bubble-sort/
 
 
 def bubbleSort(arr):
@@ -10,18 +11,19 @@ def bubbleSort(arr):
 
         # Last i elements are already in place
         for j in range(0, n-i-1):
-
+            # print(i,j)
             # traverse the array from 0 to n-i-1
             # Swap if the element found is greater than the next element
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
 
 
-# Optimized Implementation: 
-# The above function always runs O(n^2) time even if the array is sorted. It can be optimized by stopping the algorithm if inner loop didn’t cause any swap. 
 
-# Python3 Optimized implementation of Bubble sort
-# An optimized version of Bubble Sort
+# Optimized Implementation: 
+
+# The above function always runs O(n^2) time even if the array is sorted. It can be optimized by stopping the algorithm if inner loop 
+# didn’t cause any swap. 
+
 def bubbleSortOptimized(arr):
     n = len(arr)
 
