@@ -1,8 +1,10 @@
 # Merge Sort:
-# Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves,
+# Merge Sort is a Divide and Conquer algorithm, Recursive algorithm. It divides the input array into two halves, calls itself for the two halves,
 # and then merges the two sorted halves.
 
 # https://www.youtube.com/watch?v=TzeBrDU-JaY
+# https://www.geeksforgeeks.org/merge-sort/
+
 
 def mergeSort(arr):
     if len(arr) < 2:
@@ -53,7 +55,8 @@ print("Sorted array is:")
 print(arr)
 
 
-# Time Complexity: Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
+# Time Complexity: Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the 
+# array into two halves and takes linear time to merge two halves.
 # Auxiliary Space: O(n)
 # Algorithmic Paradigm: Divide and Conquer
 # Sorting In Place: No in a typical implementation

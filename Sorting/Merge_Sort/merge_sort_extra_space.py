@@ -40,7 +40,8 @@ print("Sorted array is:")
 print(sorted_final_array)
 
 
-# Time Complexity: Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves and takes linear time to merge two halves.
+# Time Complexity: Merge Sort is  θ(nLogn) in all 3 cases (worst, average and best) as merge sort always divides the array into two halves 
+# and takes linear time to merge two halves.
 # Auxiliary Space: O(n)
 # Algorithmic Paradigm: Divide and Conquer
 # Sorting In Place: No in a typical implementation
