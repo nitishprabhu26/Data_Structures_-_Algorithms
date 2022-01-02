@@ -1,16 +1,19 @@
 # Binary Search:
 # https://www.geeksforgeeks.org/binary-search/
-# this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after 
-# just one comparison.
-# Binary Search: Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the 
-# whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the 
-# lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
+# this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of 
+# the elements after just one comparison.
+
+# Binary Search: Search a sorted array by repeatedly dividing the search interval in half. Begin with an 
+# interval covering the whole array. If the value of the search key is less than the item in the middle of the 
+# interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly check 
+# until the value is found or the interval is empty.
 
 # Compare x with the middle element.
 # If x matches with the middle element, we return the mid index.
-# Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element.
-# Then we apply the algorithm again for the right half.
-# Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half.
+# Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after 
+# the mid element. Then we apply the algorithm again for the right half.
+# Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the 
+# left half.
 
 # Linear Search:
 # The time complexity of the above algorithm is O(n).
@@ -48,8 +51,9 @@ def binary_search(arr, x):
     # If we reach here, then the element was not present
     return -1
 
-# recursion
 
+
+# recursion
 
 @time_it
 def binary_search_recursive(arr, x, low, high):
@@ -89,6 +93,6 @@ if __name__ == '__main__':
 
 
 # Time Complexiety: O(log n)
-# Auxiliary Space: O(1) in case of iterative implementation. In the case of recursive implementation, O(log n) recursion call
-# stack space.
+# Auxiliary Space: O(1) in case of iterative implementation. In the case of recursive implementation, O(log n) 
+# recursion call stack space.
 # Algorithmic Paradigm: Decrease and Conquer.
