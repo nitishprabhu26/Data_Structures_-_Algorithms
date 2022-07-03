@@ -48,6 +48,46 @@ def mergeSort(arr):
         k += 1
 
 
+# OR
+# https://youtu.be/nCNfu_zNhyI
+
+
+def mergeSort(arr):
+    if len(arr) < 2:
+        return
+
+    mid = len(arr)//2
+    L = arr[:mid]
+    R = arr[mid:]
+
+    mergeSort(L)
+    mergeSort(R)
+    merge_two_sorted_lists(L, R, arr)
+
+
+def merge_two_sorted_lists(a, b, arr):
+
+    i = j = k = 0
+    while i < len(a) and j < len(b):
+        if a[i] <= b[j]:
+            arr[k] = a[i]
+            i += 1
+        else:
+            arr[k] = b[j]
+            j += 1
+        k += 1
+
+    while i < len(a):
+        arr[k] = a[i]
+        i += 1
+        k += 1
+
+    while j < len(b):
+        arr[k] = b[j]
+        j += 1
+        k += 1
+        
+
 arr = [12, 11, 13, 5, 6, 7]
 mergeSort(arr)
 print("Sorted array is:")
